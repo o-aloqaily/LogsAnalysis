@@ -17,7 +17,7 @@ def getTopThreeArticles(conn):
     for article in results:
         title = article[0]
         views = article[1]
-        print("\"%s\" — %s views." % (title, views))
+        print("\"%s\" - %s views." % (title, views))
 
 
 def getTopAuthors(conn):
@@ -36,7 +36,7 @@ def getTopAuthors(conn):
     for author in results:
         name = author[0]
         views = author[1]
-        print("%s — %s views" % (name, views))
+        print("%s - %s views" % (name, views))
 
 
 def getDaysWithMostErrors(conn):
@@ -69,7 +69,7 @@ def getDaysWithMostErrors(conn):
     for result in results:
         date = result[0]
         perc = result[1]
-        print("%s — %s errors" % (formatDate(date), perc))
+        print("%s - %s errors" % (formatDate(date), perc))
 
 
 def formatDate(date):
